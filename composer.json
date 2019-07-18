@@ -1,0 +1,24 @@
+{
+    "name": "d3vy/cups",
+    "description": "Calculates the consumed coffee for a project.",
+    "keywords": ["php", "project", "coffee", "cup"],
+    "type": "package",
+    "license": "WTFPL",
+    "homepage": "https://github.com/d3vy/Cups",
+    "authors": [
+        {
+            "name": "Szabolcs Surányi",
+            "email": "szabolcs.suranyi@shadesoft.hu",
+            "homepage": "http://shadesoft.hu"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "d3vy\\Cups\\": "" }
+    },
+    "require": {
+        "php": ">=5.6"
+    },
+    "suggest": {
+        "twig/twig": "Required for the Twig bridge."
+    }
+}
