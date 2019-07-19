@@ -12,7 +12,7 @@ class CupsExtension extends \Twig_Extension {
      */
     public function getFunctions() {
         return array(
-            new Twig_SimpleFunction('cups', function($startDate, $endDate, $dailyCups, $projectWeight = null, $excludedDays = null) {
+            new Twig_SimpleFunction('cups', function($startDate, $endDate, $dailyCups, $projectWeight = 100, $excludedDays = [0, 6]) {
                 return Cups::calculate($startDate, $endDate, $dailyCups, $projectWeight, $excludedDays);
             })
         );
