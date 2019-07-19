@@ -16,7 +16,7 @@
     <h1>Cups</h1>
     <p>
         This project was made with only <?= Cups::calculate('2019-07-18', '2019-07-18', 3, 33) ?> <i class="fas fa-coffee"></i>,
-        but my big old project was made with <?= Cups::calculate('2011-09-11', 'today', 3, 10) ?> <i class="fas fa-coffee"></i>.
+        but my big old project was made with <?= Cups::calculate('2011-09-11', 'today', 3, 10, []) ?> <i class="fas fa-coffee"></i>.
     </p>
 </body>
 </html>
