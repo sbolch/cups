@@ -3,16 +3,16 @@
 namespace d3vy\Cups\Twig;
 
 use d3vy\Cups\Cups;
-use Twig_SimpleFunction;
+use Twig\TwigFunction;
 
-class CupsExtension extends \Twig_Extension {
+class CupsExtension extends \Twig\Extension\AbstractExtension; {
 
     /**
-     * @return [Twig_SimpleFunction]
+     * @return TwigFunction[]
      */
     public function getFunctions() {
         return array(
-            new Twig_SimpleFunction('cups', function($startDate, $endDate, $dailyCups, $projectWeight = 100, $excludedDays = [0, 6]) {
+            new TwigFunction('cups', function($startDate, $endDate, $dailyCups, $projectWeight = 100, $excludedDays = [0, 6]) {
                 return Cups::calculate($startDate, $endDate, $dailyCups, $projectWeight, $excludedDays);
             })
         );
