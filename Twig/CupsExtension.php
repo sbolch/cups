@@ -5,7 +5,7 @@ namespace d3vy\Cups\Twig;
 use d3vy\Cups\Cups;
 use Twig\TwigFunction;
 
-class CupsExtension extends \Twig\Extension\AbstractExtension; {
+class CupsExtension extends \Twig\Extension\AbstractExtension {
 
     /**
      * @return TwigFunction[]
