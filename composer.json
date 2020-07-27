@@ -4,7 +4,7 @@
     "keywords": ["php", "project", "coffee", "cup"],
     "type": "package",
     "license": "WTFPL",
-    "homepage": "https://github.com/d3vy/Cups",
+    "homepage": "https://github.com/d3vy/cups",
     "authors": [
         {
             "name": "Szabolcs Surányi",
